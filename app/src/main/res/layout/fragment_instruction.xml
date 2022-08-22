@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- ConstraintLayout here helping positionnig the view's in flexable way,
+   ConstraintLayout is allows you to make large and complex layouts with a flat view hierarchy-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instruction.InstructionFragment"
+        android:background="@drawable/bggg"
+        android:padding="80dp">
+
+        <TextView
+            android:id="@+id/textstartyourtour"
+            android:text="@string/start_your_tour"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/onboarding_header_style" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="@string/start_msg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textstartyourtour"
+            app:layout_constraintBottom_toTopOf="@id/next"
+            style="@style/onboarding_body_style" />
+
+        <Button
+            android:id="@+id/next"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/next"
+            app:layout_constraintVertical_bias="0.0"
+            style="@style/onboarding_button_style" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

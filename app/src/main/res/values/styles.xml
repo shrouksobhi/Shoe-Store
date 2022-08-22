@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_datails_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/text_details_margin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="edite_datails_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/text_details_margin</item>
+        <item name="android:importantForAutofill">no</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="onboarding_header_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">38dp</item>
+        <item name="android:fontFamily">@font/aclonica</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#E040FB</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="onboarding_body_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/aclonica</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="onboarding_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+</resources>

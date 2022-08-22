@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="shoeItem"
+            type="com.shrouk.shoestore.model.Shoes" />
+    </data>
+    <!-- Linear Layout is used here to align children in a single direction, vertically or horizontally-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Details.DetailsFragment"
+     >
+
+        <TextView
+            android:id="@+id/nametext"
+            android:text="@string/name"
+            style="@style/text_datails_style" />
+
+        <EditText
+            android:id="@+id/nameedite"
+            android:hint="@string/details_name"
+            android:text="@={shoeItem.name}"
+            tools:ignore="LabelFor"
+            style="@style/edite_datails_style" />
+
+        <TextView
+            android:id="@+id/sizetext"
+            android:text="@string/size"
+            style="@style/text_datails_style"/>
+
+        <EditText
+            android:id="@+id/sizeedite"
+            android:hint="@string/size"
+            android:inputType="number"
+            android:text="@={shoeItem.shoeSize}"
+            tools:ignore="LabelFor,DuplicateSpeakableTextCheck"
+            style="@style/edite_datails_style"/>
+        <TextView
+            android:id="@+id/companytext"
+            android:text="@string/company"
+            style="@style/text_datails_style"
+            />
+
+        <EditText
+            android:id="@+id/companyedite"
+            android:hint="@string/company"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:text="@={shoeItem.company}"
+            tools:ignore="LabelFor,DuplicateSpeakableTextCheck"
+            style="@style/edite_datails_style"/>
+        <TextView
+            android:id="@+id/descriptiontext"
+            android:text="@string/description"
+            style="@style/text_datails_style"
+            />
+
+        <EditText
+            android:id="@+id/descriptionedite"
+            android:hint="desceibe you shoe"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:text="@={shoeItem.description}"
+            tools:ignore="LabelFor"
+            style="@style/edite_datails_style"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_margin="@dimen/text_margin"
+            />
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_margin="@dimen/text_margin"
+            />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</layout>
